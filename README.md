@@ -1,4 +1,4 @@
-# Homework2_TDD
+# Homework2-TDD
 This repository contains a TDD Java project using junit 4.12 library.
 # Project requirements
 1. Create a class to test if a given number is a Fibonacci number
