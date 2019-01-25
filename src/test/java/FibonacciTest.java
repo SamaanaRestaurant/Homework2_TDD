@@ -17,61 +17,61 @@ public class FibonacciTest {
     }
 
     @Test(expected = RuntimeException.class)
-    public void testWhenFibonacciNumberIsNegativeIndexOneComputeRecursiveMethodReturnsRuntimeException(){
+    public void testWhenFibonacciIsNegativeComputeRecursiveMethodReturnsRuntimeException(){
         fibonacci.computeRecursive(-1);
     }
     @Test
-    public void testWhenFibonacciNumberIsFirstComputeRecursiveMethodReturnsOne(){
+    public void testWhenFibonacciIndexIsZeroComputeRecursiveMethodReturnsOne(){
         assertEquals(1, fibonacci.computeRecursive(0));
     }
     @Test
-    public void testWhenFibonacciNumberIsSecondComputeRecursiveMethodReturnsOne(){
+    public void testWhenFibonacciIndexIsOneComputeRecursiveMethodReturnsOne(){
         assertEquals(1, fibonacci.computeRecursive(1));
     }
 
 
     @Test
-    public void testWhenFibonacciNumberIsThirdComputeRecursiveMethodReturnsTwo(){
+    public void testWhenFibonacciIndexIsTwoComputeRecursiveMethodReturnsTwo(){
         assertEquals(2, fibonacci.computeRecursive(2));
     }
     @Test
-    public void testWhenFibonacciNumberIsFifthComputeRecursiveMethodReturnsFive(){
+    public void testWhenFibonacciIndexIsFourComputeRecursiveMethodReturnsFive(){
         assertEquals(5, fibonacci.computeRecursive(4));
     }
     @Test
-    public void testWhenFibonacciNumberIsEighthComputeRecursiveMethodReturnsTwentyOne(){
+    public void testWhenFibonacciIndexIsSevenComputeRecursiveMethodReturns21(){
         assertEquals(21, fibonacci.computeRecursive(7));
     }
 
     @Test(expected = RuntimeException.class)
-    public void testWhenFibonacciNumberIsNegativeIndexOneComputeNonRecursiveMethodReturnsRuntimeException(){
+    public void testWhenFibonacciIsNegativeIndexComputeNonRecursiveMethodReturnsRuntimeException(){
         fibonacci.computeNonRecursive(-1);
     }
 
     @Test
-    public void testWhenFibonacciNumberIsFirstComputeNonRecursiveMethodReturnsOne(){
+    public void testWhenFibonacciIndexIsZeroComputeNonRecursiveMethodReturnsOne(){
         assertEquals(1, fibonacci.computeNonRecursive(0));
     }
 
 
     @Test
-    public void testWhenFibonacciNumberIsSecondComputeNonRecursiveMethodReturnsOne(){
+    public void testWhenFibonacciIndexIsOneComputeNonRecursiveMethodReturnsOne(){
         assertEquals(1, fibonacci.computeNonRecursive(1));
     }
 
     @Test
-    public void testWhenFibonacciNumberIsThirdComputeNonRecursiveMethodReturnsTwo(){
+    public void testWhenFibonacciIndexIsTwoComputeNonRecursiveMethodReturnsTwo(){
         assertEquals(2, fibonacci.computeNonRecursive(2));
     }
 
     @Test
-    public void testWhenFibonacciNumberIsFifthComputeNonRecursiveMethodReturnsFive(){
+    public void testWhenFibonacciIndexIsFiveComputeNonRecursiveMethodReturnsFive(){
         //assertEquals(5, fibonacci.computeNonRecursive(4));
         assertThat(fibonacci.computeNonRecursive(4), is(5));
     }
 
     @Test
-    public void testWhenFibonacciNumberIsEighthComputeNonRecursiveMethodReturnsTwentyOne(){
+    public void testWhenFibonacciIndexIsSevenComputeNonRecursiveMethodReturns21(){
         assertEquals(21, fibonacci.computeNonRecursive(7));
     }
 
