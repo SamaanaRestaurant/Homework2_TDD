@@ -6,7 +6,7 @@ public class Fibonacci {
             throw new RuntimeException();
         }
         if (index == 0 || index == 1){
-            return 1;
+            return index;
         }
         return computeRecursive(index - 1) + computeRecursive(index - 2);
     }
@@ -17,7 +17,7 @@ public class Fibonacci {
             throw  new RuntimeException();
         }
         if(index == 0 || index == 1){
-            return 1;
+            return index;
         }
         int first = 1;
         int second = 1;
