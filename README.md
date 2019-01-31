@@ -8,6 +8,20 @@ This repository contains a TDD Java project using junit 4.12 library.
    - Name this class Fibonacci
    - Implement both recursive and non-recursive methods 
    - Name the methods 'computeRecursive' and 'computeNonRecursive'
+3. Recursion vs. Iteration 
+   - Modify Fibonacci class by adding a main method 
+   - In main() it will be displayed the execution time for both recursive and non-recursive methods
+   - Use following flow (will be the same for non-recursive method)
+     - int index = 30;
+     - long start = System.currentTimeMillis();
+     - double result = computeRecursively(index);
+     - end = System.currentTimeMillis();
+     - sout(“f(“ + index + ") = " + result + " : time = " + (end - start) + "ms");
+     - (if index is too big try with smaller values)
+     - (note that compute functions should be modified to be static in order to be called from main)
+   - Which one is faster?
+   - What happens when index = 50?
+     - Think about possible explanations
    
 **TDD class**
 - Fibonacci
